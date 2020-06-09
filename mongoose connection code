@@ -1,0 +1,15 @@
+mongoose.connection.on('error',function(err){
+    console.log('database connection error');
+    console.log(err);
+}); //end mongoose connection error
+
+//handling mongoose success event
+mongoose.connection.on('open', function(err){
+    if(err){
+        console.log("database error");
+        console.log(err)
+    } else {
+        console.log("database connection open success");
+    }
+}); //end open connection mongoose handler
+

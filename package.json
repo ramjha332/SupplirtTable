@@ -1,0 +1,24 @@
+{
+  "name": "table-1",
+  "version": "1.0.0",
+  "description": "supplier table fields",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ram",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "check": "^1.0.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "logger": "0.0.1",
+    "moment": "^2.26.0",
+    "moment-timezone": "^0.5.31",
+    "mongoose": "^5.9.17",
+    "pino": "^6.3.2",
+    "response": "^0.18.0",
+    "shortid": "^2.2.15"
+  }
+}
