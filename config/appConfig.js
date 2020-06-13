@@ -6,7 +6,7 @@ appConfig.env = "dev";
 appConfig.db = {
     uri: 'mongodb://127.0.0.1:27017/AssignmentAppDB',
 }
-appConfig.apiVersion = '/api/t1';
+appConfig.apiVersion = '/api/project';
 
 module.exports = {
     port: appConfig.port,

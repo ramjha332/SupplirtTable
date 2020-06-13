@@ -1,7 +1,7 @@
 const express = require('express')
-const table1controller = require('./../controllers/table1controller')
-const appConfig = require('./../config/appConfig')
-const auth = require('./../middlewares/auth')
+const table1controller = require('../controllers/suppliercontroller')
+const appConfig = require('../config/appConfig')
+const auth = require('../middlewares/auth')
 
 let setRouter = (app) => {
 

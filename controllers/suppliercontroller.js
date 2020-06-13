@@ -1,11 +1,11 @@
 const express = require('express')
 const mongoose = require('mongoose')
-var SupplierTable = require('./../models/Table1')
+var SupplierTable = require('../models/Supplier')
 const shortid = require('shortid')
-const response = require('./../libs/responseLib')
-const time = require('./../libs/timeLib')
-const check = require('./../libs/checkLib')
-const logger = require('./../libs/loggerLib')
+const response = require('../libs/responseLib')
+const time = require('../libs/timeLib')
+const check = require('../libs/checkLib')
+const logger = require('../libs/loggerLib')
 
 
 //inserting the model here
@@ -18,13 +18,13 @@ let getAllSuppliers = (req, res) => {
         .exec((err, result) => {
             if(err){
                 console.log(err)
-                logger.error(err.message,'Table1 Controller : getAllSuppliers', 10)
+                logger.error(err.message,'supplierController : getAllSuppliers', 10)
                 let apiResponse = response.generate(true, 'Failed to find Supplier Details', 500, null)
                 res.send(apiResponse)
             } else if (check.isEmpty(result)) {
                 console.log("No result")
                 // res.send("No result")
-                logger.info('No result Found','Table1Controller:getAllSuppliers')
+                logger.info('No result Found','supplierController:getAllSuppliers')
                 let apiResponse = response.generate(true, 'No Details Found', 404, null)
                 res.send(apiResponse)
             } else {
@@ -50,7 +50,7 @@ let viewByTableId = (req, res) => {
         } else {
             let apiResponse = response.generate(false, 'All Supplier details found', 200, result)
             res.send(apiResponse)
-            logger.info("Supplier found successfully","table1ontroller:ViewByTableId",5)
+            logger.info("Supplier found successfully","supplierController:ViewByTableId",5)
         }
     })
 }

@@ -1,7 +1,7 @@
 {
-    "name" : "Supplier Table Application",
+    "name" : "Supplier, Part, Sellpart Table Application",
     "version" : "0.0.1",
-    "description" : "Documentation for the Supplier Table App",
-    "title" : "Supplier Table APIs",
+    "description" : "Documentation for the Supplier,Part,Sellpart Table App",
+    "title" : "Supplier, Part, Sellpart Table APIs",
     "url" : "http://localhost:3000"
 }
